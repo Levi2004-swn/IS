@@ -1,62 +1,69 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>45-Day English Plan</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-.w{padding:.75rem 0;font-family:var(--font-sans)}
-.hdr{margin-bottom:1rem}
-.hdr h1{font-size:17px;font-weight:500;color:var(--color-text-primary);margin-bottom:2px}
-.hdr p{font-size:12px;color:var(--color-text-secondary)}
-.phases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-bottom:1rem}
-.pb{padding:8px 10px;border-radius:var(--border-radius-md);font-size:12px;font-weight:500;cursor:pointer;border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);text-align:center;line-height:1.3}
-.pb.all{grid-column:1/-1}
-.pb.act{color:#fff;border-color:transparent}
-.pb.act.ph1{background:#534AB7}
-.pb.act.ph2{background:#0F6E56}
-.pb.act.ph3{background:#993C1D}
-.pb.act.pall{background:#444441}
-.pbar{height:3px;background:var(--color-background-secondary);border-radius:3px;margin-bottom:.875rem;overflow:hidden}
-.pfill{height:100%;border-radius:3px;background:#7F77DD;transition:width .3s}
-.dgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-bottom:1rem}
-.dd{height:36px;border-radius:var(--border-radius-md);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;cursor:pointer;border:0.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);color:var(--color-text-secondary)}
-.dd.act{color:#fff}
-.dd.act.ph1{background:#7F77DD;border-color:#7F77DD}
-.dd.act.ph2{background:#1D9E75;border-color:#1D9E75}
-.dd.act.ph3{background:#D85A30;border-color:#D85A30}
-.dd.ph1{border-left:2px solid #AFA9EC;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0}
-.dd.ph2{border-left:2px solid #5DCAA5;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0}
-.dd.ph3{border-left:2px solid #F0997B;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0}
-.nav{display:flex;align-items:center;gap:8px;margin-bottom:.875rem}
-.nav button{padding:8px 14px;font-size:13px;min-width:44px;min-height:44px}
-.nav-mid{flex:1;text-align:center}
-.nav-mid .dn{font-size:14px;font-weight:500;color:var(--color-text-primary)}
-.nav-mid .dt{font-size:11px;color:var(--color-text-secondary);margin-top:1px}
-.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem;margin-bottom:.75rem}
-.ch{display:flex;align-items:center;gap:8px;margin-bottom:.875rem;flex-wrap:wrap}
-.bdg{font-size:11px;font-weight:500;padding:3px 9px;border-radius:10px}
-.br{background:#EEEDFE;color:#3C3489}
-.bs{background:#E1F5EE;color:#085041}
-.bw{background:#FAECE7;color:#712B13}
-.bph{background:#F1EFE8;color:#444441}
-.focus{font-size:13px;font-weight:500;color:var(--color-text-primary)}
-.trow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-bottom:.875rem}
-.tc{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px}
-.tc .tl{font-size:11px;color:var(--color-text-secondary);margin-bottom:2px}
-.tc .tv{font-size:13px;font-weight:500;color:var(--color-text-primary)}
-.phdesc{font-size:12px;color:var(--color-text-secondary);padding:6px 10px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);margin-bottom:.875rem;line-height:1.5}
-.sb{margin-bottom:.875rem}
-.sl{display:flex;align-items:center;gap:6px;margin-bottom:5px}
-.si{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.sir{background:#7F77DD}.sis{background:#1D9E75}.siw{background:#D85A30}
-.ul{list-style:none;padding:0}
-.ul li{font-size:12px;color:var(--color-text-secondary);padding:3px 0 3px 12px;position:relative;line-height:1.5}
-.ul li::before{content:"→";position:absolute;left:0;color:var(--color-text-tertiary);font-size:10px;top:4px}
-.srcs{margin-top:.625rem;padding-top:.625rem;border-top:0.5px solid var(--color-border-tertiary)}
-.srcs .sl2{font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
-.stags{display:flex;flex-wrap:wrap;gap:5px}
-.stag{font-size:11px;padding:3px 7px;border-radius:6px;border:0.5px solid var(--color-border-tertiary);color:var(--color-text-secondary);background:var(--color-background-secondary);text-decoration:none}
-.divider{height:0.5px;background:var(--color-border-tertiary);margin:.875rem 0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#111;padding:16px;max-width:680px;margin:0 auto}
+  .w{padding:.75rem 0}
+  .hdr{margin-bottom:1rem}
+  .hdr h1{font-size:17px;font-weight:500;color:#111;margin-bottom:2px}
+  .hdr p{font-size:12px;color:#666}
+  .phases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-bottom:1rem}
+  .pb{padding:8px 10px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:0.5px solid #ccc;background:#fff;color:#666;text-align:center;line-height:1.4;width:100%}
+  .pb.all{grid-column:1/-1}
+  .pb.act-all{background:#444441;color:#fff;border-color:transparent}
+  .pb.act-ph1{background:#534AB7;color:#fff;border-color:transparent}
+  .pb.act-ph2{background:#0F6E56;color:#fff;border-color:transparent}
+  .pb.act-ph3{background:#993C1D;color:#fff;border-color:transparent}
+  .pbar{height:3px;background:#e0e0dc;border-radius:3px;margin-bottom:.875rem;overflow:hidden}
+  .pfill{height:100%;border-radius:3px;background:#7F77DD;transition:width .3s}
+  .dgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-bottom:1rem}
+  .dd{height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;cursor:pointer;border:0.5px solid #ddd;background:#eee;color:#666;user-select:none}
+  .dd.p1{border-left:2px solid #AFA9EC;border-radius:0 8px 8px 0}
+  .dd.p2{border-left:2px solid #5DCAA5;border-radius:0 8px 8px 0}
+  .dd.p3{border-left:2px solid #F0997B;border-radius:0 8px 8px 0}
+  .dd.act1{background:#7F77DD;border-color:#7F77DD;color:#fff;border-left:0.5px solid #7F77DD;border-radius:8px}
+  .dd.act2{background:#1D9E75;border-color:#1D9E75;color:#fff;border-left:0.5px solid #1D9E75;border-radius:8px}
+  .dd.act3{background:#D85A30;border-color:#D85A30;color:#fff;border-left:0.5px solid #D85A30;border-radius:8px}
+  .nav{display:flex;align-items:center;gap:8px;margin-bottom:.875rem}
+  .navbtn{padding:8px 14px;font-size:13px;min-width:44px;min-height:44px;border:0.5px solid #ccc;background:#fff;color:#111;border-radius:8px;cursor:pointer}
+  .navbtn:hover{background:#f0f0ec}
+  .nav-mid{flex:1;text-align:center}
+  .nav-mid .dn{font-size:14px;font-weight:500;color:#111}
+  .nav-mid .dt{font-size:11px;color:#666;margin-top:1px}
+  .card{background:#fff;border:0.5px solid #ddd;border-radius:12px;padding:1rem;margin-bottom:.75rem}
+  .ch{display:flex;align-items:center;gap:8px;margin-bottom:.875rem;flex-wrap:wrap}
+  .bdg{font-size:11px;font-weight:500;padding:3px 9px;border-radius:10px}
+  .br{background:#EEEDFE;color:#3C3489}
+  .bs{background:#E1F5EE;color:#085041}
+  .bw{background:#FAECE7;color:#712B13}
+  .bph{background:#F1EFE8;color:#444441}
+  .focus{font-size:13px;font-weight:500;color:#111}
+  .trow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-bottom:.875rem}
+  .tc{background:#f5f5f3;border-radius:8px;padding:8px 10px}
+  .tc .tl{font-size:11px;color:#666;margin-bottom:2px}
+  .tc .tv{font-size:13px;font-weight:500;color:#111}
+  .phdesc{font-size:12px;color:#666;padding:6px 10px;background:#f5f5f3;border-radius:8px;margin-bottom:.875rem;line-height:1.5}
+  .sb{margin-bottom:.875rem}
+  .sl{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+  .si{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+  .sir{background:#7F77DD}.sis{background:#1D9E75}.siw{background:#D85A30}
+  .ul{list-style:none;padding:0}
+  .ul li{font-size:12px;color:#555;padding:3px 0 3px 12px;position:relative;line-height:1.5}
+  .ul li::before{content:"→";position:absolute;left:0;color:#aaa;font-size:10px;top:4px}
+  .srcs{margin-top:.625rem;padding-top:.625rem;border-top:0.5px solid #ddd}
+  .sl2{font-size:11px;font-weight:500;color:#888;margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+  .stags{display:flex;flex-wrap:wrap;gap:5px}
+  .stag{font-size:11px;padding:3px 7px;border-radius:6px;border:0.5px solid #ddd;color:#555;background:#f5f5f3;text-decoration:none}
+  .stag:hover{background:#fff;color:#111}
+  .divider{height:0.5px;background:#eee;margin:.875rem 0}
 </style>
+</head>
+<body>
 <div class="w">
-  <h2 class="sr-only">45-day English skills improvement plan starting May 15 2026 with daily reading, speaking and writing tasks</h2>
   <div class="hdr">
     <h1>45-day English plan</h1>
     <p>May 15 – Jun 28, 2026 · Intermediate · ~60 min/day</p>
@@ -65,116 +72,150 @@
   <div class="pbar"><div class="pfill" id="pfill" style="width:2%"></div></div>
   <div class="dgrid" id="dgrid"></div>
   <div class="nav">
-    <button onclick="go(-1)" aria-label="previous day">←</button>
+    <button class="navbtn" id="btnPrev" aria-label="previous day">←</button>
     <div class="nav-mid">
-      <div class="dn" id="dlabel">Day 1</div>
-      <div class="dt" id="ddate">Thu, May 15</div>
+      <div class="dn" id="dlabel">Day 1 of 45</div>
+      <div class="dt" id="ddate"></div>
     </div>
-    <button onclick="go(1)" aria-label="next day">→</button>
+    <button class="navbtn" id="btnNext" aria-label="next day">→</button>
   </div>
   <div id="dcontent"></div>
 </div>
+
 <script>
-const START=new Date(2026,4,15);
-function dateOf(d){const r=new Date(START);r.setDate(START.getDate()+d-1);return r}
-function fmtDate(d){return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})}
-const phases=[
-  {id:1,label:"Phase 1\nDays 1–15",desc:"Build daily habits, vocabulary base, and basic structures",pcls:"ph1"},
-  {id:2,label:"Phase 2\nDays 16–30",desc:"Expand fluency, speed, and expression complexity",pcls:"ph2"},
-  {id:3,label:"Phase 3\nDays 31–45",desc:"Polish accuracy and tackle real-world challenges",pcls:"ph3"}
+const START = new Date(2026, 4, 15);
+function dateOf(d) { const r = new Date(START); r.setDate(START.getDate() + d - 1); return r; }
+function fmtDate(d) { return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); }
+
+const phases = [
+  { id: 1, label: "Phase 1<br>Days 1–15", desc: "Build daily habits, vocabulary base, and basic structures", actCls: "act-ph1" },
+  { id: 2, label: "Phase 2<br>Days 16–30", desc: "Expand fluency, speed, and expression complexity", actCls: "act-ph2" },
+  { id: 3, label: "Phase 3<br>Days 31–45", desc: "Polish accuracy and tackle real-world challenges", actCls: "act-ph3" }
 ];
-function getPhase(d){return d<=15?1:d<=30?2:3}
-const plans={
-  1:{focus:"Setting the foundation",rt:"20 min",st:"15 min",wt:"15 min",
-    r:{t:["Read a short BBC article (3–5 min)","Highlight 8 new words + meanings + example","SQ3R method: Survey → Question → Read → Recite → Review"],s:[{n:"BBC Learning English",u:"https://www.bbc.co.uk/learningenglish"},{n:"Cambridge Dict",u:"https://dictionary.cambridge.org"}]},
-    s:{t:["Record yourself introducing who you are (2 min)","Listen back and note unclear words","Repeat and try to fix each issue"],s:[{n:"ELSA Speak",u:"https://elsaspeak.com"},{n:"Vocaroo",u:"https://vocaroo.com"}]},
-    w:{t:["Write 5 sentences using today's new words","Keep a journal entry about your day (5–8 sentences)","Focus on: subject + verb + object structure"],s:[{n:"Grammarly",u:"https://grammarly.com"},{n:"LanguageTool",u:"https://languagetool.org"}]}},
-  2:{focus:"News & vocabulary building",rt:"20 min",st:"15 min",wt:"15 min",
-    r:{t:["Read 1 BBC or Guardian article fully","Guess meaning from context before checking","Write 3 words in your vocab notebook"],s:[{n:"The Guardian",u:"https://theguardian.com"},{n:"Merriam-Webster",u:"https://merriam-webster.com"}]},
-    s:{t:["Shadow a 2-min BBC podcast clip","Pause every sentence, repeat with same rhythm","Say new words in full sentences aloud"],s:[{n:"BBC 6 Min English",u:"https://www.bbc.co.uk/learningenglish/english/features/6-minute-english"},{n:"Spotify Podcasts",u:"https://open.spotify.com"}]},
-    w:{t:["Write a 5–7 sentence summary of today's article","Use 3 new vocab words in your summary","Practice transition words: however, therefore, in addition"],s:[{n:"Hemingway Editor",u:"https://hemingwayapp.com"},{n:"Grammarly",u:"https://grammarly.com"}]}},
-  3:{focus:"Descriptive language",rt:"20 min",st:"15 min",wt:"15 min",
-    r:{t:["Read a Medium personal essay on a topic you enjoy","Identify descriptive adjectives and adverbs","Note how the writer uses comparisons"],s:[{n:"Medium",u:"https://medium.com"},{n:"Cambridge Dict",u:"https://dictionary.cambridge.org"}]},
-    s:{t:["Describe your room or a photo in detail for 2 min","Use adjectives then upgrade them (big → enormous)","Record and listen back"],s:[{n:"Tandem",u:"https://tandem.net"},{n:"HelloTalk",u:"https://hellotalk.com"}]},
-    w:{t:["Write a description of a place you love (8–10 sentences)","Use at least 5 descriptive adjectives","Avoid repeating the same word twice"],s:[{n:"Purdue OWL",u:"https://owl.purdue.edu"},{n:"British Council",u:"https://learnenglish.britishcouncil.org"}]}},
-  4:{focus:"Opinions & viewpoints",rt:"20 min",st:"15 min",wt:"20 min",
-    r:{t:["Read an opinion article on any topic","Identify the writer's main argument","Note opinion phrases: 'I believe…', 'It seems that…'"],s:[{n:"The Economist",u:"https://economist.com"},{n:"NYT Opinion",u:"https://nytimes.com/section/opinion"}]},
-    s:{t:["Give your opinion on a topic for 2 min (e.g. social media)","Use: 'In my view…', 'I think…', 'It's clear that…'","Chat with a HelloTalk partner for 10 min"],s:[{n:"HelloTalk",u:"https://hellotalk.com"},{n:"iTalki",u:"https://italki.com"}]},
-    w:{t:["Write an opinion paragraph (8–10 sentences)","Start with a clear main statement","Support with 2 reasons + 1 example"],s:[{n:"British Council Writing",u:"https://learnenglish.britishcouncil.org/skills/writing"},{n:"Grammarly",u:"https://grammarly.com"}]}},
-  5:{focus:"Vocabulary review day",rt:"15 min",st:"15 min",wt:"20 min",
-    r:{t:["Re-read Days 1–4 vocabulary notebook","Read 1 short ReadWorks passage","Cover definitions and test yourself"],s:[{n:"ReadWorks",u:"https://readworks.org"},{n:"Quizlet",u:"https://quizlet.com"}]},
-    s:{t:["Use 10 vocab words from your list in spoken sentences","Do a 2-min 'news report': describe a recent event","Record yourself and review"],s:[{n:"Quizlet",u:"https://quizlet.com"},{n:"Vocaroo",u:"https://vocaroo.com"}]},
-    w:{t:["Write 10 original sentences using new words","Write a mini-story (5–6 sentences) using 5 vocab words","Check grammar with Grammarly"],s:[{n:"Grammarly",u:"https://grammarly.com"},{n:"LanguageTool",u:"https://languagetool.org"}]}},
-  6:{focus:"Storytelling",rt:"20 min",st:"20 min",wt:"20 min",
-    r:{t:["Read a short story from LearnEnglish","Focus on past tenses: simple, continuous, perfect","Notice how dialogue is written and punctuated"],s:[{n:"British Council",u:"https://learnenglish.britishcouncil.org"},{n:"East of the Web",u:"https://www.eastoftheweb.com"}]},
-    s:{t:["Tell a story about a memorable day for 3 min","Use: 'First…', 'Then…', 'After that…', 'Finally…'","Count your filler words (um, uh) — try to reduce them"],s:[{n:"Toastmasters",u:"https://www.toastmasters.org"},{n:"Vocaroo",u:"https://vocaroo.com"}]},
-    w:{t:["Write a short story: beginning, middle, end (10 sentences)","Use at least 3 past tense forms","Give your story a title"],s:[{n:"Purdue OWL",u:"https://owl.purdue.edu"},{n:"British Council Writing",u:"https://learnenglish.britishcouncil.org/skills/writing"}]}},
-  7:{focus:"Week 1 review & reflection",rt:"15 min",st:"15 min",wt:"20 min",
-    r:{t:["Re-read the best article from this week","Write a 5-sentence summary from memory","Check your accuracy against the original"],s:[{n:"Your vocab notebook","u":""}]},
-    s:{t:["Listen to 2 recordings from Days 1–6","Compare Day 1 vs Day 7 — what improved?","Talk 3 min about what you learned this week"],s:[{n:"Vocaroo",u:"https://vocaroo.com"}]},
-    w:{t:["Write a weekly reflection: what was hard, what improved","Review and fix grammar errors from your journal","Set 3 specific goals for next week"],s:[{n:"Grammarly",u:"https://grammarly.com"}]}}
+
+function getPhase(d) { return d <= 15 ? 1 : d <= 30 ? 2 : 3; }
+
+const plans = {
+  1: { focus: "Setting the foundation", rt: "20 min", st: "15 min", wt: "15 min",
+    r: { t: ["Read a short BBC article (3–5 min)", "Highlight 8 new words + meanings + example", "SQ3R: Survey → Question → Read → Recite → Review"], s: [{ n: "BBC Learning English", u: "https://www.bbc.co.uk/learningenglish" }, { n: "Cambridge Dict", u: "https://dictionary.cambridge.org" }] },
+    s: { t: ["Record yourself introducing who you are (2 min)", "Listen back and note unclear words", "Repeat and try to fix each issue"], s: [{ n: "ELSA Speak", u: "https://elsaspeak.com" }, { n: "Vocaroo", u: "https://vocaroo.com" }] },
+    w: { t: ["Write 5 sentences using today's new words", "Keep a journal entry about your day (5–8 sentences)", "Focus on: subject + verb + object structure"], s: [{ n: "Grammarly", u: "https://grammarly.com" }, { n: "LanguageTool", u: "https://languagetool.org" }] } },
+  2: { focus: "News & vocabulary building", rt: "20 min", st: "15 min", wt: "15 min",
+    r: { t: ["Read 1 BBC or Guardian article fully", "Guess meaning from context before checking", "Write 3 words in your vocab notebook"], s: [{ n: "The Guardian", u: "https://theguardian.com" }, { n: "Merriam-Webster", u: "https://merriam-webster.com" }] },
+    s: { t: ["Shadow a 2-min BBC podcast clip", "Pause every sentence, repeat with same rhythm", "Say new words in full sentences aloud"], s: [{ n: "BBC 6 Min English", u: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" }, { n: "Spotify Podcasts", u: "https://open.spotify.com" }] },
+    w: { t: ["Write a 5–7 sentence summary of today's article", "Use 3 new vocab words in your summary", "Practice transition words: however, therefore, in addition"], s: [{ n: "Hemingway Editor", u: "https://hemingwayapp.com" }, { n: "Grammarly", u: "https://grammarly.com" }] } },
+  3: { focus: "Descriptive language", rt: "20 min", st: "15 min", wt: "15 min",
+    r: { t: ["Read a Medium personal essay on a topic you enjoy", "Identify descriptive adjectives and adverbs", "Note how the writer uses comparisons"], s: [{ n: "Medium", u: "https://medium.com" }, { n: "Cambridge Dict", u: "https://dictionary.cambridge.org" }] },
+    s: { t: ["Describe your room or a photo in detail for 2 min", "Use adjectives then upgrade them (big → enormous)", "Record and listen back"], s: [{ n: "Tandem", u: "https://tandem.net" }, { n: "HelloTalk", u: "https://hellotalk.com" }] },
+    w: { t: ["Write a description of a place you love (8–10 sentences)", "Use at least 5 descriptive adjectives", "Avoid repeating the same word twice"], s: [{ n: "Purdue OWL", u: "https://owl.purdue.edu" }, { n: "British Council", u: "https://learnenglish.britishcouncil.org" }] } },
+  4: { focus: "Opinions & viewpoints", rt: "20 min", st: "15 min", wt: "20 min",
+    r: { t: ["Read an opinion article on any topic", "Identify the writer's main argument", "Note opinion phrases: 'I believe…', 'It seems that…'"], s: [{ n: "The Economist", u: "https://economist.com" }, { n: "NYT Opinion", u: "https://nytimes.com/section/opinion" }] },
+    s: { t: ["Give your opinion on a topic for 2 min (e.g. social media)", "Use: 'In my view…', 'I think…', 'It's clear that…'", "Chat with a HelloTalk partner for 10 min"], s: [{ n: "HelloTalk", u: "https://hellotalk.com" }, { n: "iTalki", u: "https://italki.com" }] },
+    w: { t: ["Write an opinion paragraph (8–10 sentences)", "Start with a clear main statement", "Support with 2 reasons + 1 example"], s: [{ n: "British Council Writing", u: "https://learnenglish.britishcouncil.org/skills/writing" }, { n: "Grammarly", u: "https://grammarly.com" }] } },
+  5: { focus: "Vocabulary review day", rt: "15 min", st: "15 min", wt: "20 min",
+    r: { t: ["Re-read Days 1–4 vocabulary notebook", "Read 1 short ReadWorks passage", "Cover definitions and test yourself"], s: [{ n: "ReadWorks", u: "https://readworks.org" }, { n: "Quizlet", u: "https://quizlet.com" }] },
+    s: { t: ["Use 10 vocab words from your list in spoken sentences", "Do a 2-min 'news report': describe a recent event", "Record yourself and review"], s: [{ n: "Quizlet", u: "https://quizlet.com" }, { n: "Vocaroo", u: "https://vocaroo.com" }] },
+    w: { t: ["Write 10 original sentences using new words", "Write a mini-story (5–6 sentences) using 5 vocab words", "Check grammar with Grammarly"], s: [{ n: "Grammarly", u: "https://grammarly.com" }, { n: "LanguageTool", u: "https://languagetool.org" }] } },
+  6: { focus: "Storytelling", rt: "20 min", st: "20 min", wt: "20 min",
+    r: { t: ["Read a short story from LearnEnglish", "Focus on past tenses: simple, continuous, perfect", "Notice how dialogue is written and punctuated"], s: [{ n: "British Council", u: "https://learnenglish.britishcouncil.org" }, { n: "East of the Web", u: "https://www.eastoftheweb.com" }] },
+    s: { t: ["Tell a story about a memorable day for 3 min", "Use: 'First…', 'Then…', 'After that…', 'Finally…'", "Count filler words (um, uh) — try to reduce them"], s: [{ n: "Toastmasters", u: "https://www.toastmasters.org" }, { n: "Vocaroo", u: "https://vocaroo.com" }] },
+    w: { t: ["Write a short story: beginning, middle, end (10 sentences)", "Use at least 3 past tense forms", "Give your story a title"], s: [{ n: "Purdue OWL", u: "https://owl.purdue.edu" }, { n: "British Council Writing", u: "https://learnenglish.britishcouncil.org/skills/writing" }] } },
+  7: { focus: "Week 1 review & reflection", rt: "15 min", st: "15 min", wt: "20 min",
+    r: { t: ["Re-read the best article from this week", "Write a 5-sentence summary from memory", "Check your accuracy against the original"], s: [{ n: "Your vocab notebook", u: "" }] },
+    s: { t: ["Listen to 2 recordings from Days 1–6", "Compare Day 1 vs Day 7 — what improved?", "Talk 3 min about what you learned this week"], s: [{ n: "Vocaroo", u: "https://vocaroo.com" }] },
+    w: { t: ["Write a weekly reflection: what was hard, what improved", "Review and fix grammar errors from your journal", "Set 3 specific goals for next week"], s: [{ n: "Grammarly", u: "https://grammarly.com" }] } }
 };
-const rtopics=["News article deep dive","Complex sentence structures","Editorial & arguments","Speed reading practice","Listening & note-taking","Debate & discussion","Weekly review & reflection"];
-const stopics=["Shadowing native speakers","Fluency drills","Presentation practice","Interview simulation","Formal speaking","Debate & discussion","Weekly speaking review"];
-const wtopics=["Academic vocabulary writing","Formal paragraph structure","Essay body paragraphs","Email writing practice","Argument & counter-argument","Paraphrasing practice","Weekly writing review"];
-const p2r=[{n:"The Guardian",u:"https://theguardian.com"},{n:"Cambridge Dict",u:"https://dictionary.cambridge.org"}];
-const p2s=[{n:"iTalki",u:"https://italki.com"},{n:"BBC 6 Min English",u:"https://www.bbc.co.uk/learningenglish/english/features/6-minute-english"}];
-const p2w=[{n:"Purdue OWL",u:"https://owl.purdue.edu"},{n:"Grammarly",u:"https://grammarly.com"}];
-const p3r=[{n:"The Economist",u:"https://economist.com"},{n:"Medium",u:"https://medium.com"}];
-const p3s=[{n:"Toastmasters",u:"https://www.toastmasters.org"},{n:"ELSA Speak",u:"https://elsaspeak.com"}];
-const p3w=[{n:"Hemingway Editor",u:"https://hemingwayapp.com"},{n:"British Council",u:"https://learnenglish.britishcouncil.org"}];
-function genPlan(d){
-  if(plans[d])return plans[d];
-  const ph=getPhase(d);
-  const ti=(d-1)%7;
-  const topic=ph===2?rtopics[ti]:wtopics[ti];
-  const rs=ph===2?p2r:p3r,ss=ph===2?p2s:p3s,ws=ph===2?p2w:p3w;
-  const rta=[["Read one full article without stopping","Highlight 5–8 new vocabulary words","Write a 3-sentence summary after reading"],["Read an opinion piece or editorial","Identify the main argument and supporting points","Use 3 new words from it in written sentences"],["Read a chapter from an English novel","Analyze complex sentence structures","Note how the author builds argument or story"]];
-  const sta=[["Shadow a native speaker clip for 5 min","Have a 10-min conversation with a language partner","Record a 2-min monologue on any topic"],["Practice a 3-min presentation on a familiar topic","Focus on clear transitions between ideas","Record and review for clarity and confidence"],["5-min cold speech on an unfamiliar topic (no prep)","Focus on avoiding filler words","Ask a partner for honest feedback"]];
-  const wta=[["Write a structured paragraph: topic + 3 details + conclusion","Use 3 of today's new words","Check for grammar errors with Grammarly"],["Write a formal email or opinion paragraph","Focus on formal vs informal language differences","Revise your first draft once for clarity"],["Write a 150-word essay introduction","Practice writing a strong thesis statement","Mix short and long sentences for variety"]];
-  return{focus:ph===2?rtopics[ti]:wtopics[ti],rt:"20 min",st:"20 min",wt:"20 min",
-    r:{t:rta[ph-1],s:rs},s:{t:sta[ph-1],s:ss},w:{t:wta[ph-1],s:ws}};
+
+const rtopics = ["News article deep dive", "Complex sentence structures", "Editorial & arguments", "Speed reading practice", "Listening & note-taking", "Debate & discussion", "Weekly review & reflection"];
+const wtopics = ["Academic vocabulary writing", "Formal paragraph structure", "Essay body paragraphs", "Email writing practice", "Argument & counter-argument", "Paraphrasing practice", "Weekly writing review"];
+const p2r = [{ n: "The Guardian", u: "https://theguardian.com" }, { n: "Cambridge Dict", u: "https://dictionary.cambridge.org" }];
+const p2s = [{ n: "iTalki", u: "https://italki.com" }, { n: "BBC 6 Min English", u: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" }];
+const p2w = [{ n: "Purdue OWL", u: "https://owl.purdue.edu" }, { n: "Grammarly", u: "https://grammarly.com" }];
+const p3r = [{ n: "The Economist", u: "https://economist.com" }, { n: "Medium", u: "https://medium.com" }];
+const p3s = [{ n: "Toastmasters", u: "https://www.toastmasters.org" }, { n: "ELSA Speak", u: "https://elsaspeak.com" }];
+const p3w = [{ n: "Hemingway Editor", u: "https://hemingwayapp.com" }, { n: "British Council", u: "https://learnenglish.britishcouncil.org" }];
+const rta = [
+  ["Read one full article without stopping", "Highlight 5–8 new vocabulary words", "Write a 3-sentence summary after reading"],
+  ["Read an opinion piece or editorial", "Identify the main argument and supporting points", "Use 3 new words from it in written sentences"],
+  ["Read a chapter from an English novel", "Analyze complex sentence structures", "Note how the author builds argument or story"]
+];
+const sta = [
+  ["Shadow a native speaker clip for 5 min", "Have a 10-min conversation with a language partner", "Record a 2-min monologue on any topic"],
+  ["Practice a 3-min presentation on a familiar topic", "Focus on clear transitions between ideas", "Record and review for clarity and confidence"],
+  ["5-min cold speech on an unfamiliar topic (no prep)", "Focus on avoiding filler words", "Ask a partner for honest feedback"]
+];
+const wta = [
+  ["Write a structured paragraph: topic + 3 details + conclusion", "Use 3 of today's new words", "Check for grammar errors with Grammarly"],
+  ["Write a formal email or opinion paragraph", "Focus on formal vs informal language differences", "Revise your first draft once for clarity"],
+  ["Write a 150-word essay introduction", "Practice writing a strong thesis statement", "Mix short and long sentences for variety"]
+];
+
+function genPlan(d) {
+  if (plans[d]) return plans[d];
+  const ph = getPhase(d);
+  const ti = (d - 1) % 7;
+  const rs = ph === 2 ? p2r : p3r, ss = ph === 2 ? p2s : p3s, ws = ph === 2 ? p2w : p3w;
+  return { focus: ph === 2 ? rtopics[ti] : wtopics[ti], rt: "20 min", st: "20 min", wt: "20 min",
+    r: { t: rta[ph - 1], s: rs }, s: { t: sta[ph - 1], s: ss }, w: { t: wta[ph - 1], s: ws } };
 }
-let cur=1,af=0;
-function phClass(d){return"ph"+getPhase(d)}
-function renderPhNav(){
-  const el=document.getElementById("phNav");
-  el.innerHTML=`<button class="pb all ${af===0?"act pall":""}" onclick="fp(0)">All 45 days</button>`;
-  phases.forEach(p=>{el.innerHTML+=`<button class="pb ${p.pcls} ${af===p.id?"act "+p.pcls:""}" onclick="fp(${p.id})">${p.label.replace("\n","<br>")}</button>`});
+
+let cur = 1, af = 0;
+
+function renderPhNav() {
+  const el = document.getElementById("phNav");
+  el.innerHTML = `<button class="pb all ${af === 0 ? 'act-all' : ''}" onclick="fp(0)">All 45 days</button>`;
+  phases.forEach(p => {
+    el.innerHTML += `<button class="pb ${af === p.id ? p.actCls : ''}" onclick="fp(${p.id})">${p.label}</button>`;
+  });
 }
-function fp(id){af=id;renderPhNav();renderGrid()}
-function renderGrid(){
-  const el=document.getElementById("dgrid");
-  el.innerHTML="";
-  for(let d=1;d<=45;d++){
-    const ph=getPhase(d);
-    if(af!==0&&af!==ph)continue;
-    const pc=phClass(d);
-    const btn=document.createElement("div");
-    btn.className="dd "+pc+(d===cur?" act "+pc:"");
-    btn.textContent=d;
-    btn.onclick=(dd=>()=>sel(dd))(d);
+
+function fp(id) { af = id; renderPhNav(); renderGrid(); }
+
+function renderGrid() {
+  const el = document.getElementById("dgrid");
+  el.innerHTML = "";
+  for (let d = 1; d <= 45; d++) {
+    const ph = getPhase(d);
+    if (af !== 0 && af !== ph) continue;
+    const btn = document.createElement("div");
+    const isCur = d === cur;
+    btn.className = "dd " + (isCur ? "act" + ph : "p" + ph);
+    btn.textContent = d;
+    btn.setAttribute("role", "button");
+    btn.setAttribute("aria-label", "Day " + d);
+    btn.onclick = (dd => () => sel(dd))(d);
     el.appendChild(btn);
   }
 }
-function sel(d){cur=d;document.getElementById("pfill").style.width=Math.round((d/45)*100)+"%";renderGrid();renderDay()}
-function go(dir){sel(Math.min(45,Math.max(1,cur+dir)))}
-function renderDay(){
-  const p=genPlan(cur);
-  const ph=getPhase(cur);
-  const phd=phases[ph-1];
-  const dt=dateOf(cur);
-  document.getElementById("dlabel").textContent="Day "+cur+" of 45";
-  document.getElementById("ddate").textContent=fmtDate(dt);
-  function skill(label,bdgCls,siCls,data){
-    const srcs=data.s.map(s=>s.u?`<a class="stag" href="${s.u}" target="_blank">${s.n} ↗</a>`:`<span class="stag">${s.n}</span>`).join("");
-    return`<div class="sb">
-      <div class="sl"><div class="si ${siCls}"></div><span class="bdg ${bdgCls}">${label}</span></div>
-      <ul class="ul">${data.t.map(t=>`<li>${t}</li>`).join("")}</ul>
-      <div class="srcs"><div class="sl2">Sources</div><div class="stags">${srcs}</div></div>
-    </div>`;
-  }
-  document.getElementById("dcontent").innerHTML=`
+
+function sel(d) {
+  cur = d;
+  document.getElementById("pfill").style.width = Math.round((d / 45) * 100) + "%";
+  renderGrid();
+  renderDay();
+}
+
+document.getElementById("btnPrev").onclick = () => sel(Math.max(1, cur - 1));
+document.getElementById("btnNext").onclick = () => sel(Math.min(45, cur + 1));
+
+function skill(label, bdgCls, siCls, data) {
+  const srcs = data.s.map(s => s.u
+    ? `<a class="stag" href="${s.u}" target="_blank" rel="noopener">${s.n} ↗</a>`
+    : `<span class="stag">${s.n}</span>`).join("");
+  return `<div class="sb">
+    <div class="sl"><div class="si ${siCls}"></div><span class="bdg ${bdgCls}">${label}</span></div>
+    <ul class="ul">${data.t.map(t => `<li>${t}</li>`).join("")}</ul>
+    <div class="srcs"><div class="sl2">Sources</div><div class="stags">${srcs}</div></div>
+  </div>`;
+}
+
+function renderDay() {
+  const p = genPlan(cur);
+  const ph = getPhase(cur);
+  const phd = phases[ph - 1];
+  document.getElementById("dlabel").textContent = "Day " + cur + " of 45";
+  document.getElementById("ddate").textContent = fmtDate(dateOf(cur));
+  document.getElementById("dcontent").innerHTML = `
     <div class="card">
       <div class="ch">
         <span class="bdg bph">Phase ${ph}</span>
@@ -188,12 +229,17 @@ function renderDay(){
       </div>
       <div class="phdesc">${phd.desc}</div>
       <div class="divider"></div>
-      ${skill("Reading","br","sir",p.r)}
+      ${skill("Reading", "br", "sir", p.r)}
       <div class="divider"></div>
-      ${skill("Speaking","bs","sis",p.s)}
+      ${skill("Speaking", "bs", "sis", p.s)}
       <div class="divider"></div>
-      ${skill("Writing","bw","siw",p.w)}
+      ${skill("Writing", "bw", "siw", p.w)}
     </div>`;
 }
-renderPhNav();renderGrid();renderDay();
+
+renderPhNav();
+renderGrid();
+renderDay();
 </script>
+</body>
+</html>
